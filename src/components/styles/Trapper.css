@@ -1,0 +1,126 @@
+.trapper-box{
+    position: relative;
+    width: 19%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.trapper-bg{
+    position: relative;
+    height: 90%;
+    width: 65%;
+    transform: skew(-14deg);
+    -webkit-transform: skew(-14deg); 
+    -moz-transform: skew(-14deg); 
+    -o-transform: skew(-14deg); 
+    /* background-color: lightblue; */
+    opacity: .8;
+    z-index: 1;
+}
+
+.globo{
+    position: absolute;
+    top: -50px;
+    left: 70px;
+    width: 84px;
+    height: 34px;
+    background-color: rgb(001, 135, 246);
+    border: 3px solid rgb(103,176,031);
+    border-radius: 6px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: .9;
+    text-shadow: 2px 4px black, 2px 2px black;
+    outline: 2px solid black;
+    z-index: 2;
+}
+.globo::after{
+    content:"";
+    position: absolute;
+    top: 26px;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-right: 18px solid transparent;
+    border-top: 38px solid rgb(001, 135, 246);
+    border-left: 1px solid black;  
+}
+.globo::before{
+    content: "";
+    position: absolute;
+    top: 29px;
+    left: 26px;
+    width: 0;
+    height: 0;
+    border-right: 24px solid transparent;
+    border-top: 44px solid rgb(103,176,031);
+    border-left: 2px solid rgb(103,176,031);
+}
+.globo div{
+    position: absolute;
+    top: -10px;
+    transform: scaleX(.9);
+}
+.globo b{
+    font-size: 42px;
+    text-transform: capitalize;
+}
+
+.globo.cro{
+    background-color: rgb(255, 181, 000);
+    text-transform: uppercase;
+    font-size: 42px;
+}
+.globo.cro::after{
+    border-top: 38px solid rgb(255, 181, 000);
+}
+
+.globo.ronny{
+    left:88px;
+    background-color: rgb(249,098,245);
+}
+.globo.ronny::after{
+    border-top: 38px solid rgb(249,098,245);
+}
+
+.globo.pablo{
+    background-color: rgb(255,089,003);
+}
+.globo.pablo::after{
+    border-top: 38px solid rgb(255,089,003);
+}
+
+.globo.capo{
+    left: 80px;
+    background-color: rgb(032,204,008);
+}
+.globo.capo::after{
+    border-top: 38px solid rgb(032,204,008);
+}
+
+.animated-trapper{
+    position: absolute;
+    z-index: 2;
+
+}
+
+.animated-trapper__duko{
+    top: -22px;
+    left:-110px
+}
+.animated-trapper__cro{
+    left: -72px;
+    top: -6px
+}
+.animated-trapper__ronny{
+    top: -26px;
+    left: -75px;
+}
+.animated-trapper__pablo{
+    left: -100px;
+    top:-5px
+}
+.animated-trapper__capo{
+    left: -108px;
+    top:-22px
+}

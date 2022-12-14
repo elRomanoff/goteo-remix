@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: rounded;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'rounded';
+    src: url('fonts/bbblight.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'rounded-bold';
+    src: url('fonts/BubbleboddyNeueTrialRegular-Vm1l.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url("fonts/retro_computer_personal_use.ttf")
+}
+
+
+.App {
+    height: 100vh;
+    background: linear-gradient(to top, rgb(017, 017, 017), rgb(041, 041, 065));
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+.container{
+    border-radius: 12px;
+    width: 1024px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-flow: column;
+    /* background-image: url("goteo-remix.png"); */
+    background-size: 1024px 600px;
+}
+.header{
+    padding: 0 8px;
+    margin: 14px;
+    height:80px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.header__song{
+    width: 38%;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+.header__song--title{
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-left: 32px;
+    transform: scaleX(1.2);
+}
+
+.header__song--title b{
+    font-family: rounded-bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 4px rgb(009, 078, 223), 2px 2px rgb(009, 078, 223), 4px 4px rgb(009, 078, 223), 4px 2px rgb(009, 078, 223) ;
+}
+.header__song--bottom{
+    height: 30px;
+}
+
+.header__lyrics{
+    border: 5px solid white;
+    border-radius: 10px;
+    width: 60%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleX(1.1);
+}
+.lyrics{
+    color:rgb(236,255,024);
+    font-family:pixel;
+}
+
+.select{
+    height: 100px;
+    margin: 19px;
+    font-size: 42px;
+    transform:scaleY(1.2);
+    transform: scaleX(0.94);
+    text-shadow: 2px 4px rgb(009, 078, 223), 2px 2px rgb(009, 078, 223), 4px 4px rgb(009, 078, 223), 4px 2px rgb(009, 078, 223) ;
+}
+
+.trappers{
+    width: 81%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 20px
+}
+.trapper-box{
+    position: relative;
+    width: 19%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.trapper-bg{
+    position: relative;
+    height: 90%;
+    width: 65%;
+    transform: skew(-14deg);
+    -webkit-transform: skew(-14deg); 
+    -moz-transform: skew(-14deg); 
+    -o-transform: skew(-14deg); 
+    /* background-color: lightblue; */
+    opacity: .8;
+    z-index: 1;
+}

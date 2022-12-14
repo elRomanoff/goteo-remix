@@ -1,0 +1,24 @@
+.inventory-middle{
+    height: 100%;
+    width: 220px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mid--inventory{
+    height: 68%;
+    display: flex;
+    overflow: hidden;
+}
+.inventory--column{
+    width: 50%;
+    height: 100%;
+}
+.inventory--column div{
+    height: 76px;
+}
+
+.mid-music{
+    height: 28%;
+}

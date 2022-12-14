@@ -1,0 +1,10 @@
+.character-description {
+    height: 100%;
+    width: 245px;
+    position: relative;
+}
+.items-absolute{
+    position: absolute;
+    top: 30px;
+    left: -50px
+}

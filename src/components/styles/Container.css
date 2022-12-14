@@ -1,0 +1,22 @@
+.container{
+    border-radius: 12px;
+    width: 1024px;
+    height: 600px;
+    display: flex;
+    color: white;
+ }
+
+.container__inventory{
+    padding: 76px 40px;
+}
+
+.container__main_screen{
+    align-items: center;
+    flex-flow: column;
+}
+
+.box{
+    border: 3px solid rgb(081, 098, 115);
+    border-radius: 3px;
+}
+

@@ -1,0 +1,45 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'rounded';
+    src: url('./media/fonts/bbblight.ttf') format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'rounded-bold';
+    src: url('./media/fonts/BubbleboddyNeueTrialRegular-Vm1l.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url("./media/fonts/retro_computer_personal_use.ttf")
+}
+
+.pixel{
+    font-family: pixel;
+}
+
+
+/* component styles */
+.App {
+    height: 100vh;
+    display: flex;
+    color: white;
+    overflow: hidden;
+    flex-flow: column;
+    align-items: center;
+}
+.App__main_screen{
+    background: linear-gradient(to top, rgb(017, 017, 017), rgb(041, 041, 065));
+    font-family: rounded;
+}
+
+.App__inventory{
+    background: linear-gradient(to top, rgb(010, 010, 010), rgb(027, 024, 038));
+}
