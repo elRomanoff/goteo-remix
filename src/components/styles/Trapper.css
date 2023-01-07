@@ -33,6 +33,10 @@
     text-shadow: 2px 4px black, 2px 2px black;
     outline: 2px solid black;
     z-index: 2;
+
+    animation-name: move-up-down;
+    animation-duration: .6s;
+    animation-iteration-count: infinite;
 }
 .globo::after{
     content:"";
@@ -123,4 +127,20 @@
 .animated-trapper__capo{
     left: -108px;
     top:-22px
+}
+
+
+@keyframes move-up-down{
+    0%{
+        top: -47px;
+    }
+    50%{
+        top: -47px
+    }
+    51%{
+        top: -50px
+    }
+    100%{
+        top: -50px
+    }
 }

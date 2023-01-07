@@ -12,7 +12,7 @@ export default function Container() {
   
   const context = useContext(Context)
 
-  return context.context === 0 ? (
+  return context.context === 1 ? (
     <div className="container container__main_screen">
         <div className="header">
           <div className="header__song">

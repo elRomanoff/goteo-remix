@@ -56,6 +56,11 @@
     transform:scaleY(1.2);
     transform: scaleX(0.94);
     text-shadow: 2px 4px rgb(009, 078, 223), 2px 2px rgb(009, 078, 223), 4px 4px rgb(009, 078, 223), 4px 2px rgb(009, 078, 223) ;
+    animation-name: tilt;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    
+    /* transition: none; */
 }
 
 .trappers{
@@ -65,4 +70,20 @@
     align-items: center;
     justify-content: space-between;
     margin-left: 20px
+}
+
+
+@keyframes tilt{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1
+    }
 }

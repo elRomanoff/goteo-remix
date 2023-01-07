@@ -25,6 +25,7 @@ export default function StatsSinger() {
     )
     else if(context.trappers[2]) return(
         <>
+            <div style={{width: "50%"}}></div>
             <img src={ronny} alt="" className="ronny-animado2 anima2"></img>
         </>
     )
