@@ -7,16 +7,18 @@
     justify-content: space-between;
 }
 .mid--inventory{
-    height: 68%;
     display: flex;
     overflow: hidden;
+    flex-wrap: wrap;
 }
-.inventory--column{
+.mid--inventory .box{
     width: 50%;
-    height: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
 }
-.inventory--column div{
-    height: 76px;
+.img_disabled{
+    opacity: 0.5
 }
 
 .mid-music{

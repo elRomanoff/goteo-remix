@@ -43,3 +43,8 @@
 .App__inventory{
     background: linear-gradient(to top, rgb(010, 010, 010), rgb(027, 024, 038));
 }
+
+.App__luna{
+    background-color: #000;
+    
+}

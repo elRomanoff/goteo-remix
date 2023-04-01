@@ -13,10 +13,25 @@
     -webkit-transform: skew(-14deg); 
     -moz-transform: skew(-14deg); 
     -o-transform: skew(-14deg); 
-    /* background-color: lightblue; */
-    opacity: .8;
     z-index: 1;
 }
+.trapper-bg-duko{
+    background-color: rgb(001, 135, 246);
+}
+.trapper-bg-cro{
+    background-color: rgb(255, 181, 003);
+}
+.trapper-bg-ronny{
+    background-color: rgb(249,098,245);
+}
+.trapper-bg-pablo{
+    background-color: rgb(255,089,003);
+}
+.trapper-bg-capo{
+    background-color: rgb(032,204,008);
+}
+
+
 
 .globo{
     position: absolute;

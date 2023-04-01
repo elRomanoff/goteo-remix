@@ -2,13 +2,14 @@ import React, {useContext, createContext, useEffect} from 'react'
 import Container from "./components/Container"
 import "./App.css"
 import lyrics from "./lyrics"
+import video from "./media/goteo-video.mp4"
 
 export const Context = createContext({user: 1234}); 
 const context = {
   context: 1,
   trappers: [1,0,0,0,0],
   prendas: [1,0,0,0,0],
-  lyrics: "ME PUSE LAS GUCCI <br/> CON UN SHORT DE NIKE"
+  lyrics: "solamente siento que me va a atrapar lento la muerte"
 }
 
 
@@ -16,6 +17,9 @@ export default function App({referencia}) {
 
   const [data, setData] = React.useState(context)
   const dataRef = React.useRef(data)
+
+  const videoRef = React.useRef(null)
+
   dataRef.current = data
 
 
@@ -42,11 +46,16 @@ export default function App({referencia}) {
   }
 
 
-const AppClassName = data.context === 1 ? "App App__main_screen" : "App App__inventory"
+const AppClassName = getClass(data.context) 
 
+function getClass(context){
+  if(context === 1)  return "App App__main_screen"
+  else if (context === 2) return "App App__inventory"
+  else if (context === "luna") return "App App__luna"
+}
 
 function tiempo(){
-  console.log(referencia.current.currentTime)
+  console.log(videoRef.current.currentTime * 1000) 
 }
 
 
@@ -56,7 +65,6 @@ function tiempo(){
         <Container/>
       </div>    
       <button onClick={arrancarTodo}> dale!</button>
-      <button onClick={tiempo}> asdas!</button>
 
     </Context.Provider>
 

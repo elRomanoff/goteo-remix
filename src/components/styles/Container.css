@@ -21,3 +21,19 @@
     border-radius: 3px;
 }
 
+
+.luna__container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.luna__gif{
+    width: 600px;
+    margin: auto
+}
+.luna__lyrics{
+    color:#eee !important;
+    text-align: center;
+    margin-top:50px;
+    margin-bottom: 50px
+}

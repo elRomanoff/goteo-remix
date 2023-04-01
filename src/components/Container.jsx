@@ -2,6 +2,9 @@ import React, {useContext} from 'react'
 import {Context} from "../App"
 import "./styles/Container.css"
 import "./styles/header.css"
+
+import luna from "../media/img/luna.gif"
+
 import Trapper from "./Trapper"
 
 import Description from "./Description"
@@ -12,7 +15,7 @@ export default function Container() {
   
   const context = useContext(Context)
 
-  return context.context === 1 ? (
+  if (context.context === 1)  return (
     <div className="container container__main_screen">
         <div className="header">
           <div className="header__song">
@@ -33,12 +36,20 @@ export default function Container() {
         </div>
     </div>
   ) 
-  :
-  (
+  
+  else if (context.context === 2) return (
     <div className="container container__inventory">
       <Description/>
       <Inventory/>
       <Stats/>
     </div>
+  )
+  else if (context.context === "luna") return(
+  <div class="luna__container">
+    <img className="luna__gif" src={luna}></img>
+    <div>
+      <div className="luna__lyrics lyrics" dangerouslySetInnerHTML={{__html: context.lyrics}}></div>
+    </div>
+  </div>
   )
 }

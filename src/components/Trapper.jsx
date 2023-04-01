@@ -28,12 +28,11 @@ export default function Trapper({name, active}) {
     <div className="trapper-box">
         <img src={objImg[`${name}`][0]} alt="" className={`animated-trapper animated-trapper__${name}`}></img>
         <div className={`globo ${name}`}><div><b>{name[0]}</b>{name.substring(1)} </div></div>
-        <div className="trapper-bg"></div>
+        <div className={"trapper-bg " + "trapper-bg-" + name} ></div>
     </div>
   ) : (
     <div className="trapper-box">
       <img src={objImg[`${name}`][1]} alt="" className={`animated-trapper animated-trapper__${name}`}></img>
-      <div className="trapper-bg"></div>
     </div>
   )
 
